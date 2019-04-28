@@ -4,5 +4,6 @@
     <string name="btn_kewajaran">Periksa Kewajaran dan Konsistensi</string>
     <string name="btn_konversi">Konversi</string>
     <string name="btn_rh">Rentang Harga</string>
+    <string name="title_activity_kewajaran">KewajaranActivity</string>
 
 </resources>
