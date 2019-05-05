@@ -6,16 +6,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.farifam.siwasis.R
 import com.farifam.siwasis.holder.BlokHolder
 import com.farifam.siwasis.model.Blok
+import com.google.android.material.snackbar.Snackbar
+import android.R.attr.name
 
-class Blokdapter(private val heroes: List<Blok>) : RecyclerView.Adapter<BlokHolder>() {
+
+
+class BlokAdapter(private val datas: List<Blok>) : RecyclerView.Adapter<BlokHolder>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): BlokHolder {
         return BlokHolder(LayoutInflater.from(viewGroup.context).inflate(R.layout.item_blok, viewGroup, false))
     }
 
-    override fun getItemCount(): Int = heroes.size
+    override fun getItemCount(): Int = datas.size
 
     override fun onBindViewHolder(holder: BlokHolder, position: Int) {
-        holder.bindHero(heroes[position])
+        holder.bindData(datas[position])
     }
 }

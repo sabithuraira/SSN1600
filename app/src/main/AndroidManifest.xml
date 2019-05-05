@@ -10,6 +10,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".BlokActivity"
+                android:label="@string/title_activity_blok"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
                 android:name=".KewajaranActivity"
                 android:label="@string/title_activity_kewajaran"
                 android:theme="@style/AppTheme.NoActionBar">
