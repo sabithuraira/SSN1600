@@ -1,0 +1,402 @@
+{
+  "blokiv": [{
+    "question": "Apakah ada Perempuan Usia 10 - 50 Tahun (Usia Subur)",
+    "answer": [{
+      "label": "Ya",
+      "action": "next",
+      "next_action": {
+        "question": "Apakah ada ART yang berusia 0 (nol) Tahun atau bayi",
+        "answer": [{
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "(KOR Blok XIV R. 1402 - 1416 : Imunisasi) Imunisasi Lengkap BCG (4) Polio (4), DPT(3), HB (3), Campak(1)",
+            "(KOR Blok XIV R. 1417 - 1419 : Kondisi ART 0 - 23 Tahun) Jenis Makanan Pendamping adakah sudah wajar dengan umur dan kondisi wilayah",
+            "(KP Blok IV.2. R.239 - R.240 : Biaya Pelayanan Pengobatan) Minimal harus ada isian",
+            "(KP Blok IV.2. R.250 : Biaya Periksa Kehamilan) Jika kosong, apakah benar",
+            "(KP Blok IV.2 R.251: Biaya Imunisasi) Biaya imunisasi terisi"
+          ]
+        },
+          {
+            "label": "Tidak",
+            "action": "skip",
+            "message": []
+          }
+        ]
+      },
+      "message": []
+    },
+      {
+        "label": "Tidak",
+        "action": "skip",
+        "message": []
+      }
+    ]
+  },
+    {
+      "question": "Apakah ada anak kandung (R.403 = 3)",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": ["Cek selisih umur anak (403 = 3) dengan umur orang tua di ruta ini harus > 12 Tahun"]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+
+    {
+      "question": "Apakah ada yang status kawin/Cerai (R.404 > 1)",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Cek Umur harus lebih dari 10 tahun",
+          "Cek R.612 ≠ 2 pada jenjang ≤ SMA (R.613 < 15)"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+
+  "blokv": [{
+    "question": "Apakah ada yang mempunyai NIK (R.502  terisi)?",
+    "answer": [{
+      "label": "Ya",
+      "action": "next",
+      "next_action": {
+        "question": "Apakah ada yang sumber NIK dari KTP (R.503 = 2)",
+        "answer": [{
+          "label": "Ya",
+          "action": "skip",
+          "message": ["Cek umur di NIK (R.502 digit 7 - 12) dan B.IV R.407 lebih dari 17 tahun"]
+        },
+          {
+            "label": "Tidak",
+            "action": "skip",
+            "message": []
+          }
+        ]
+      },
+      "message": ["Cek NIK digit 7 - 12 dengan tanggal dan tahun lahir (B.IV R.406)"]
+    },
+      {
+        "label": "Tidak",
+        "action": "skip",
+        "message": []
+      }
+    ]
+  }],
+
+
+  "blokvi": [{
+    "question": "Apakah R.606 ada yang terisi 1 atau 2",
+    "answer": [{
+      "label": "Ya",
+      "action": "skip",
+      "message": ["Cek umurnya 0 - 17 tahun, jika umur >17 maka kosong"]
+    },
+      {
+        "label": "Tidak",
+        "action": "skip",
+        "message": []
+      }
+    ]
+  },
+    {
+      "question": "Berapa kode yang terisi pada R.607?",
+      "answer": [{
+        "label": "1",
+        "action": "skip",
+        "message": ["Cek umur ART tersebut 0 -7 tahun, dan Blok KP B.IV.2. R.257 Iuran Sekolah Harus terisi"]
+      },
+        {
+          "label": "2",
+          "action": "skip",
+          "message": ["Cek umur ART tersebut 0 -7 tahun, dan Blok KP B.IV.2. R.257 Iuran Sekolah Harus terisi,  R.608 terisi"]
+        },
+        {
+          "label": "3",
+          "action": "skip",
+          "message": ["Cek umut ART tersebut umur 8 - 10 tahun,   R.608 terisi"]
+        },
+        {
+          "label": "Lainnya",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R. 609  = 5 tetapi R.610 / 611 = 1",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": ["cek ke petugas, apa benar bisa huruf arab/lainnya tetapi latin tidak bisa"]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.612  = 2 masih bersekolah ?",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Cek umur dengan kesesuaian jenjang (R. 613)",
+          "Blok KP IV.2. R.255 - 260 harus terisi",
+          "Jika R.613 < 15 maka R.404 > 2 (belum kawin/cerai)"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "apakah ada R.613 = 2, 6, 10 (Sekolah Luar Biasa)?",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": ["Konfirmasi ke Petugas kejadian jarang (Rare Cases) apa benar ????"]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.612 = 2 dan R.613 = 1, 5, 9 (pendidikan kejar paket)?",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": ["Konfirmasi ke PCL kejadian jarang, cek lokasi sampel apa memungkinkan"]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada yang telah lulus (R614 = 8)",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": ["Cek keseuaian umur minimal lulus (SD min 10 thn, SMP min 13 tahun, SMA min 16 Thn"]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.617 = 1",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Cek R. 615 < 13",
+          "Cek R. 2108 K. 2 dan K.3 terisi"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah R.618 - R.620 terisi?",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": ["Cek R.612 harus terisi 2/ 3"]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+
+
+  "blokvii": [{
+    "question": "Apakah ada di R.701  kode X dilingkari",
+    "answer": [{
+      "label": "Ya",
+      "action": "skip",
+      "message": [
+        "kode X dilingkari jika kode lainnya (A - D) tidak dilingkari",
+        "Konfirmasi ke petugas, Kode X untuk ART yang tidak melakukan apa-apa seperti sakit, atau pemalas akut "
+      ]
+    },
+      {
+        "label": "Tidak",
+        "action": "skip",
+        "message": []
+      }
+    ]
+  },
+    {
+      "question": "pada ART no. 1, apakah ada kode D tidak dilingkari?",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Kegiatan pibadi tersebut meliputi kegiatan ARTdalam sosial kemasyarakatan, seperti rapat RT,  yasinan, melayat, kondangan dan lainnya"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada ART bekerja / R.701 kode A dilingkari?",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Cek isian 704 diisi petugas lengakap dan tulis lapangan usahanya",
+          "Cek isian 705 - 707  terisi"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah R.705 terisi 1 - 5",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Cek isian KP Blok V.A Pendapatan upag/gaji atau V.B pendapatan usaha terisi"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+
+  "blokviii": [{
+    "question": "Apakah ada R. 802 = 1  / menguasai HP ?",
+    "answer": [{
+      "label": "Ya",
+      "action": "skip",
+      "message": [
+        "Blok KP - Cek isian Blok IV.2 R. 227 > 0 , biasanya ada pengeluaran untuk pulsa"
+      ]
+    },
+      {
+        "label": "Tidak",
+        "action": "skip",
+        "message": []
+      }
+    ]
+  },
+    {
+      "question": "Apakah ada R.804 = 1 / menggunakan internet",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Blok KP - Cek isian Blok IV.2 R. 229 > 0 , biasanya ada pengeluaran biaya internet"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.807 kode B dilingkari",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Cek ART nya masih/sedang bersekolah R.612 = 2"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada  R.808 = 1",
+      "answer": [{
+        "label": "Ya",
+        "action": "skip",
+        "message": [
+          "Blok KP Cek Blok IV.2. R.268 > 0 ada biaya jasa perbankan"
+        ]
+      },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+
+  ],
+
+  "blokix": [],
+
+  "blokx": [{
+    "question": "apakah ada ART dengan isian R. 1002 s.d. 1008 kode 1, 2, 5 atau 6 semua ?",
+    "answer": [{
+      "label": "Ya",
+      "action": "skip",
+      "message": [
+        "Konfrmasi dengan petugas, bagaimana kondisi responden sebenarnya, apakah sesuai?"
+      ]
+    },
+      {
+        "label": "Tidak",
+        "action": "skip",
+        "message": []
+      }
+    ]
+  }
+
+  ]
+
+}
