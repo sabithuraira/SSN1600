@@ -17,7 +17,7 @@ class BlokHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
 
         itemView.setOnClickListener { v: View  ->
-            var position: Int = getAdapterPosition()
+//            var position: Int = getAdapterPosition()
 
             val intent = Intent(itemView.context, BlokActivity::class.java)
             itemView.context.startActivity(intent)

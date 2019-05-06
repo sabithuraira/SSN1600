@@ -53,7 +53,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dip"
                     android:fontFamily="serif-monospace"
-                    android:text="SISTEM PENYEDIAAN DATA DAN INFORMASI STATISTIK KABUPATEN OKU TIMUR"
+                    android:text="APLIKASI PEMERIKSAAN KEWAJARAN DAN KONSITENSI SUSENAS"
                     android:textAlignment="center"
                     android:textSize="14sp"
                     android:textStyle="normal|bold" />
