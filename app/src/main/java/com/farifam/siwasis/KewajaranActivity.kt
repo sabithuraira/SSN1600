@@ -17,13 +17,16 @@ class KewajaranActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val listHeroes = listOf(
-            Blok(name = "BLOK I", deskripsi =  "Keterangan Tempat"),
-            Blok(name = "BLOK II", deskripsi =  "Keterangan Tempat"),
-            Blok(name = "BLOK III", deskripsi =  "Keterangan Tempat"),
-            Blok(name = "BLOK IV", deskripsi =  "Keterangan Tempat"),
-            Blok(name = "BLOK V", deskripsi =  "Keterangan Tempat"),
-            Blok(name = "BLOK VI", deskripsi =  "Keterangan Tempat"),
-            Blok(name = "BLOK VII", deskripsi =  "Keterangan Tempat")
+            Blok(id="i", name = "BLOK I", deskripsi =  "Keterangan Tempat"),
+            Blok(id="ii", name = "BLOK II", deskripsi =  "Keterangan Tempat"),
+            Blok(id="iii", name = "BLOK III", deskripsi =  "Keterangan Tempat"),
+            Blok(id="iv", name = "BLOK IV", deskripsi =  "Keterangan Tempat"),
+            Blok(id="v", name = "BLOK V", deskripsi =  "Keterangan Tempat"),
+            Blok(id="vi", name = "BLOK VI", deskripsi =  "Keterangan Tempat"),
+            Blok(id="vii", name = "BLOK VII", deskripsi =  "Keterangan Tempat"),
+            Blok(id="viii", name = "BLOK VIII", deskripsi =  "Keterangan Tempat"),
+            Blok(id="ix", name = "BLOK IX", deskripsi =  "Keterangan Tempat"),
+            Blok(id="x", name = "BLOK X", deskripsi =  "Keterangan Tempat")
         )
 
         val heroesAdapter = BlokAdapter(listHeroes)
