@@ -4,7 +4,7 @@
               android:layout_height="wrap_content"
               android:minHeight="50dip"
               android:orientation="vertical"
-              android:paddingTop="3dip"
+              android:paddingTop="5dip"
               android:paddingBottom="3dip">
     <LinearLayout
             android:layout_width="fill_parent"
@@ -26,7 +26,7 @@
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
                     android:paddingTop="1dip"
-                    android:paddingLeft="7dip">
+                    android:paddingLeft="3dip">
                 <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -38,44 +38,27 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="BLOK I"
-                            android:textColor="@color/textblack"
-                            android:textSize="20sp" />
+                            android:textColor="@color/textPurple"
+                            android:textSize="12sp" />
                 </LinearLayout>
                 <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                    <TextView
-                            android:id="@+id/txtDesc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:textSize="12sp"
-                            android:textColor="@color/textblack"
-                            android:text="Katerangan tempat" />
+                    <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-                android:id="@+id/dot"
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:orientation="vertical"
-                android:background="@color/textPurple"
-                android:paddingTop="3dip"
-                android:gravity="right"
-                android:layout_alignParentRight="true"
-                android:layout_weight="0.3">
-
-
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
             android:id="@+id/horizontal_bar"
             android:layout_width="fill_parent"
-            android:layout_height="2dip"
+            android:layout_height="1dip"
             android:orientation="vertical"
-            android:background="@color/textPurple"
+            android:background="@color/lightgrey"
             android:layout_alignParentBottom="true" />
-
 </LinearLayout>

@@ -26,15 +26,13 @@ class BlokActivity : AppCompatActivity() {
         val parser = JsonParser()
         val jsonData =  inputStreamToString(this.getResources().openRawResource(R.raw.rule))
 
-
         val gson = Gson()
-
 
         val jsonTree = parser.parse(jsonData)
         val jsonObject = jsonTree.asJsonObject
 
-        val blok_data = jsonObject.get("blokvi")
-
+        val blok_data = jsonObject.get("blok"+intent.getStringExtra("blok_id"))
+        page_name.text = intent.getStringExtra("pesan")
         val datasets = gson.fromJson(blok_data,  Array<Question>::class.java) //Question::class.java)
 
         datasets.forEach {

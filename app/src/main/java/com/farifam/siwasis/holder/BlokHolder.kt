@@ -15,11 +15,11 @@ class BlokHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         txtLabel.text = blok.name
         txtDesc.text = blok.deskripsi
 
-
         itemView.setOnClickListener { v: View  ->
 //            var position: Int = getAdapterPosition()
-
             val intent = Intent(itemView.context, BlokActivity::class.java)
+            intent.putExtra("blok_id", blok.id)
+            intent.putExtra("pesan", blok.pesan)
             itemView.context.startActivity(intent)
         }
     }

@@ -10,7 +10,7 @@ import com.farifam.siwasis.model.Question
 class QuestionAdapter(private val datas: List<Question>) : RecyclerView.Adapter<QuestionHolder>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): QuestionHolder {
-        return QuestionHolder(LayoutInflater.from(viewGroup.context).inflate(R.layout.item_blok, viewGroup, false))
+        return QuestionHolder(LayoutInflater.from(viewGroup.context).inflate(R.layout.item_question, viewGroup, false))
     }
 
     override fun getItemCount(): Int = datas.size
