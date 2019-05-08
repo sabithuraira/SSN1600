@@ -37,7 +37,7 @@
                 <TextView
                         android:id="@+id/page_name"
                         android:layout_height="wrap_content"
-                        android:text="MFD"
+                        android:text="..."
                         android:textSize="13sp"
                         android:gravity="left"
                         android:textColor="@color/textPurple"
@@ -63,12 +63,43 @@
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rec_view"
-                android:paddingTop="5dip"
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="parent"
-                app:layout_constraintBottom_toTopOf="parent"/>
+                android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_view"
+                    android:paddingTop="5dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="parent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_view2"
+                    android:paddingTop="5dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,9 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.farifam.siwasis.R
 import com.farifam.siwasis.holder.BlokHolder
 import com.farifam.siwasis.model.Blok
-import com.google.android.material.snackbar.Snackbar
-import android.R.attr.name
-
 
 
 class BlokAdapter(private val datas: List<Blok>) : RecyclerView.Adapter<BlokHolder>() {

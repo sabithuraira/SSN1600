@@ -12,9 +12,13 @@ import com.google.gson.Gson
 import com.google.gson.JsonParser
 import com.farifam.siwasis.adapter.QuestionAdapter
 import kotlinx.android.synthetic.main.content_blok.*
+import android.widget.ArrayAdapter
+import com.farifam.siwasis.adapter.MessageAdapter
 
 
 class BlokActivity : AppCompatActivity() {
+
+    var list_message : MutableList<String> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,12 +43,24 @@ class BlokActivity : AppCompatActivity() {
             listDatas.add(it)
         }
 
-        val heroesAdapter = QuestionAdapter(listDatas)
+        val heroesAdapter = QuestionAdapter(listDatas, this)
 
         rec_view.apply {
             layoutManager = LinearLayoutManager(this@BlokActivity)
             adapter = heroesAdapter
         }
+    }
+
+    fun addMessage(message : String){
+        list_message.add(message)
+        val adapterMessage = MessageAdapter(list_message)
+
+        rec_view2.apply {
+            layoutManager = LinearLayoutManager(this@BlokActivity)
+            adapter = adapterMessage
+        }
+
+
     }
 
     fun inputStreamToString(inputStream: InputStream): String {
