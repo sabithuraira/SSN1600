@@ -400,17 +400,494 @@
     ]
   }],
 
-  "blokxi": [],
-  "blokxii": [],
-  "blokxiii": [],
-  "blokxiv": [],
-  "blokxv": [],
-  "blokxvi": [],
-  "blokxvii": [],
-  "blokxviii": [],
+  "blokxi": [
+    {
+      "question": "Apakah ada R.1101 = A dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Blok KP - Cek isian IV.2 R.301 ≥ Rp. 27.500 disesuaikan dengan golongan BPJS"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1101 = B  D atau E  dilingkari ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Blok KP - Cek isian IV.2 R.301 > 10.000  biaya premi asuransi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1101 kode C tidak dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi dengan apa Jamkesda seluruh penduduk tidak berlaku lagi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1101 = C dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek berlakunya jamkesda sesuai kabupaten/kota",
+            "Blok KP - Cek isian IV.2 R.301 = Senilai BPJS gol. 3 Rp. 27.500/orang/bulan dan Blok V.D R.1.a penerimaan transfer pemerintah"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1104 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Blok KP - Cek isian IV.2  R. 246 - 249  salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1105 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Blok KP - Cek isian IV.2  R. 246 - 249  salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1108 = A, B, C, D, E dilingkari",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian R.1101 keseuaian kepemilikan jaminan kepemilikan"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxii": [
+    {
+      "question": "Apakah ada R.1201  = 1  ART rawat inap ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Blok KP - Cek isian IV.2. R.239 - 245 salah satunya > 10.000"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1202  kode G. Lainnya dilingkari ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas, apakah jenis faskes rawat inap telah sesuai dengan kode R.1202",
+            "Cek isian R.1203 jumlah hari rawat inap apakah wajar"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.1204 = A, B, C, D, E dilingkari",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian R.1101 keseuaian kepemilikan jaminan kepemilikan"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada isian R.1205 = 1 atau 2 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek kewajaran umur > 10 tahun, elektrik usia anak merokok, jika tidak wajar konfirmasi petugas",
+            "Blok KP - Cek isian IV.2 R.188 terisi >5.000"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada isian R.1206 = 1 atau 2 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek kewajaran umur > 10 tahun dan R.1208, apakah ada usia anak merokok, jika tidak wajar konfirmasi petugas",
+            "Cek R.1207  kewajaran jumlah batang rokok yang dihisap, perhari 1 bungkus maka seminggu ± 90 batang",
+            "Blok KP - Cek isian IV.2 R.184 - 188 terisi > 500"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxiii": [
+    {
+      "question": "Apakah ada Rincian 1303 kode K. lainnya dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah sudah benar kode yang dilingkari"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada Rincian 1305 kode G. lainnya dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah sudah benar kode yang dilingkari"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada Rincian 1307 kode J. lainnya dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah sudah benar kode yang dilingkari"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada Rincian 1309 kode H. lainnya dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah sudah benar kode yang dilingkari"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxiv": [
+    {
+      "question": "Apakah R.1404 telah terisi tanggal dan Bulan?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "cek, R.1404 harus terisi semua disemua jenis imunisasi, tidak boleh blank, jika tidak dapat imunisasi kode '00'",
+            "Cek umur bulan balita dan kewajaran jenis imunisasi yang didapatkan.",
+            "Blok KP - Cek Isian IV.2. R. 251 > 3.000"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxv": [
+    {
+      "question": "Apakah R. 1502.A. = 1 atau WPK penah melahirkan?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek kewajaran umur ibu saat ini (R.407) dan isian R.1503.B. umur saat melahirkan"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada isian R.1503  = 1 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian ART blok IV, apakah anak masih satu ruta, dan cek selisih usia anak dan ibu harus ≤ 2 Tahun"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxvi": [
+    {
+      "question": "apakah ada isian R.1602 terisi 4, 6, 7 dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Blok KP - Cek isian IV.2 Rincian 253 > 5.000"]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "apakah ada isian R.1602 terisi 8 dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar pengisian sudah benar untuk kondisi yang jarang di Sumsel",
+            "Blok KP - Cek isian IV.2 Rincian 253 > 5.000"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxvii": [
+    {
+      "question": "Apakah ada isian R.1703 = 5 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian R.1704 - 1708 harus ≠ 1",
+            "Konfirmasi ke petugas jika ada isian R.1704 - 1708 = 1"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxviii": [
+    {
+      "question": "Apakah isian R.1806 - 1808 Atap, lantai, dinding (aladin) terisi ada bambu ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar?? Di Sumsel jarang sekali rumah dengan 'aladin' dari bambu"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah R.1809.C kode 2 (IPAL) dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfrimasi dengan petugas apakah Benar. IPAL adalah pemrosesan limbah jadi air bersih"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
   "blokxix": [],
-  "blokxx": [],
-  "blokxxi": [],
+  "blokxx": [
+    {
+      "question": "Apakah ada R.2001.D kode 1 dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke PCL, bahwa water heater adalah pemanas air untuk mandi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "question": "Apakah ada R.2001.H dan I kode 1 dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek kewajaran lokasi sampel dilalui sungai, atau memungkinkan memiliki perahu/perahu motor"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxxi": [
+    {
+      "question": "Apakah R.2108 terisi atau ada yang mendapatkan PIP?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek nilai kewajaran PIP, SD = 225.000/ semester, SMP = 275.000/semester, dan SMA = 500.000/semester"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
   "blokxxii": [],
   "blokxxiii": []
 }

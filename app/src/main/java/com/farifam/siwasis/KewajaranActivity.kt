@@ -46,10 +46,14 @@ class KewajaranActivity : AppCompatActivity() {
                 pesan = "Cek isian Blok XVI untuk semua perempuan pernah kawin usia 10 - 54 tahun"),
             Blok(id="xvii", name = "BLOK XVII", deskripsi =  "Akses Terhadap Makanan (Ditanyakan pada KRT/Pasangan/ART 15 Tahun ke atas)",
                 pesan = "Cek isian  Blok XVII no. Pemberi Informasi sudah benar"),
-            Blok(id="xviii", name = "BLOK XVIII", deskripsi =  "Keterangan Perumahan", pesan = ""),
-            Blok(id="xix", name = "BLOK XIX", deskripsi =  "Akses Terhadap Layanan Keuangan", pesan = ""),
-            Blok(id="xx", name = "BLOK XX", deskripsi =  "Keterangan Kepemilikan Barang", pesan = ""),
-            Blok(id="xxi", name = "BLOK XXI", deskripsi =  "Keterangan Perlindungan Sosial", pesan = ""),
+            Blok(id="xviii", name = "BLOK XVIII", deskripsi =  "Keterangan Perumahan",
+                pesan = "Cek Isian 1802 dengan KP Blok IV. R.189 - 194"),
+            Blok(id="xix", name = "BLOK XIX", deskripsi =  "Akses Terhadap Layanan Keuangan",
+                pesan = "Cek setiap pertanyaan 1901 A - J dilingkari"),
+            Blok(id="xx", name = "BLOK XX", deskripsi =  "Keterangan Kepemilikan Barang",
+                pesan = "Cek kewajaran kepemilikan rumah tangga"),
+            Blok(id="xxi", name = "BLOK XXI", deskripsi =  "Keterangan Perlindungan Sosial",
+                pesan = "Cek kewajaran isian nilai penerimaan bantuan beras dan PIP"),
             Blok(id="xxii", name = "BLOK XXII", deskripsi =  "Keterangan Sumber Penghasilan Rumah Tangga", pesan = ""),
             Blok(id="xxiii", name = "BLOK XXIII", deskripsi =  "Catatan", pesan = "")
         )

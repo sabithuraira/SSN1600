@@ -35,7 +35,6 @@
                     android:layout_gravity="center_horizontal"
                     android:paddingTop="@dimen/nav_header_vertical_spacing"
                     android:src="@mipmap/ssn_logo" />
-            <!--app:srcCompat="@android:drawable/sym_def_app_icon" />-->
 
             <TextView
                     android:layout_width="wrap_content"
@@ -59,21 +58,6 @@
                     android:textStyle="normal|bold" />
 
         </LinearLayout>
-        <!--<ImageView-->
-        <!--android:src="@drawable/icon"-->
-        <!--android:layout_width="60dip"-->
-        <!--android:layout_height="60dip"-->
-        <!--android:id="@+id/imageView1"-->
-        <!--android:layout_gravity="center_horizontal" />-->
-
-        <!--<ListView-->
-        <!--android:id="@+id/listView"-->
-        <!--android:layout_marginTop="40dp"-->
-        <!--android:background="@drawable/list_border"-->
-        <!--android:layout_width="350dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal" >-->
-        <!--</ListView>-->
 
         <Button
                 android:id="@+id/kewajaran"
@@ -104,5 +88,23 @@
                 android:background="@drawable/side_nav_bar"
                 android:text="@string/btn_rh"
                 android:textColor="#ffffff" />
+
+
+
+        <ImageView
+                android:id="@+id/imagePic"
+                android:layout_width="75dip"
+                android:layout_height="75dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/nav_profil_pic"
+                android:src="@mipmap/prof_pic" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:text="@string/title_upload_pic"
+                android:textSize="14sp" />
     </LinearLayout>
 </RelativeLayout>

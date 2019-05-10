@@ -6,5 +6,6 @@
     <string name="btn_rh">Rentang Harga</string>
     <string name="title_activity_kewajaran">KewajaranActivity</string>
     <string name="title_activity_blok">BlokActivity</string>
+    <string name="title_upload_pic">Upload Photo</string>
 
 </resources>
