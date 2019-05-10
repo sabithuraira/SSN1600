@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:minHeight="50dip"
@@ -20,9 +21,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_weight="12"
                 android:paddingBottom="3dip"
-                android:paddingLeft="15dip">
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
             <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
                     android:paddingTop="1dip"
@@ -51,6 +53,17 @@
                             android:layout_height="wrap_content" />
 
                 </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_message"
+                        android:paddingTop="5dip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintBottom_toTopOf="parent"/>
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

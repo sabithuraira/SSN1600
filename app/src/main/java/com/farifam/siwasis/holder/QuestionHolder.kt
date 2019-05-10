@@ -7,11 +7,14 @@ import com.farifam.siwasis.model.Question
 import kotlinx.android.synthetic.main.item_question.view.*
 import android.widget.ArrayAdapter
 import androidx.core.view.accessibility.AccessibilityEventCompat.setAction
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.farifam.siwasis.adapter.MessageAdapter
 import com.google.android.material.snackbar.Snackbar
 
 class QuestionHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val txtLabel = itemView.txtLabel
     val spinner1 = itemView.spinner1
+    val rec_message = itemView.rec_message
 
     fun bindData(question: Question) {
         txtLabel.text = question.question
@@ -30,23 +33,16 @@ class QuestionHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner1?.setAdapter(dataAdapter)
-        spinner1?.prompt = "- Pilih jawaban -"
-//
-//        spinner1?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-//            override fun onNothingSelected(parent: AdapterView<*>?) {
-//            }
-//
-//            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-//                if(question.answer[position].action=="next"){
-//                    bindData(question.answer[position].next_action!!)
-//                }
-//            }
-//        }
+        spinner1?.setSelection(question.selected_val)
 
-//        txtDesc.text = question.question
+        var adapterMessage = MessageAdapter(emptyList())
+        if(!question.confirm_answer.isNullOrEmpty()) {
+            adapterMessage = MessageAdapter(question.confirm_answer)
+        }
 
-//        itemView.setOnClickListener { v: View  ->
-//            var position: Int = getAdapterPosition()
-//        }
+        rec_message.apply {
+            layoutManager = LinearLayoutManager(itemView.context)
+            adapter = adapterMessage
+        }
     }
 }
