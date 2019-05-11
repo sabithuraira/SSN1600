@@ -47,7 +47,6 @@ class QuestionAdapter(private var datas: MutableList<Question>,var mContext: Con
 
                     datas.set(position, newVal)
                     notifyItemChanged(position)
-
                 }
             }
         }

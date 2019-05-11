@@ -33,7 +33,7 @@ class QuestionHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner1?.setAdapter(dataAdapter)
-        spinner1?.setSelection(question.selected_val)
+//        spinner1?.setSelection(question.selected_val)
 
         var adapterMessage = MessageAdapter(emptyList())
         if(!question.confirm_answer.isNullOrEmpty()) {

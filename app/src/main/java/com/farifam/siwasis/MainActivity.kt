@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        (this as AppCompatActivity).supportActionBar?.hide()
+        setSupportActionBar(toolbar)
+        (this as AppCompatActivity).supportActionBar!!.hide()
 
-//        setSupportActionBar(toolbar)
 
 //        fab.setOnClickListener { view ->
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)

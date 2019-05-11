@@ -20,6 +20,9 @@ class BlokActivity : AppCompatActivity() {
         setContentView(R.layout.activity_blok)
         setSupportActionBar(toolbar)
 
+        (this as AppCompatActivity).supportActionBar!!.title = "Pemeriksaan Blok"
+
+
         val listDatas: MutableList<Question> = mutableListOf()
 
         val parser = JsonParser()
