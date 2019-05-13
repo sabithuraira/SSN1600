@@ -20,7 +20,8 @@ class BlokActivity : AppCompatActivity() {
         setContentView(R.layout.activity_blok)
         setSupportActionBar(toolbar)
 
-        (this as AppCompatActivity).supportActionBar!!.title = "Pemeriksaan Blok"
+        (this as AppCompatActivity).supportActionBar!!.title = intent.getStringExtra("nama")
+        (this as AppCompatActivity).supportActionBar!!.subtitle = intent.getStringExtra("deskripsi")
 
 
         val listDatas: MutableList<Question> = mutableListOf()

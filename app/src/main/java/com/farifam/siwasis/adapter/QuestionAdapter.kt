@@ -38,7 +38,7 @@ class QuestionAdapter(private var datas: MutableList<Question>,var mContext: Con
                 if (spinnerPosition >= 0) {
                     if (datas[position].answer[spinnerPosition].action == "next") {
                         datas.add((position + 1), datas[position].answer[spinnerPosition].next_action!!)
-                        notifyItemInserted(position+1)
+                        notifyItemInserted(position + 1)
                     }
 
                     for (data in datas[position].answer[spinnerPosition].message) {

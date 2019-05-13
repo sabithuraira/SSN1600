@@ -20,6 +20,8 @@ class BlokHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             val intent = Intent(itemView.context, BlokActivity::class.java)
             intent.putExtra("blok_id", blok.id)
             intent.putExtra("pesan", blok.pesan)
+            intent.putExtra("nama", blok.name)
+            intent.putExtra("deskripsi", blok.deskripsi)
             itemView.context.startActivity(intent)
         }
     }
