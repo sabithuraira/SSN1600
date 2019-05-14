@@ -1,7 +1,63 @@
 {
-  "bloki": [],
+  "bloki": [
+    {
+      "question": "Apakah klasifikasi adalah Perdesaan?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek keterangan bahan bakaer memasak R.1817 ≠ 5",
+            "KP - Cek pola konsumsi makanan jadi apakah wajar di desa"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
   "blokii": [],
-  "blokiii": [],
+  "blokiii": [
+    {
+      "question": "Apakah isian R.302 > 0 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian Blok IV, apakah benar?",
+            "Cek isian blok XIV Keterangan Balita apakah terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+
+    {
+      "question": "Apakah isian R.303 > 0 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek Blok VI harus terisi, "
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
   "blokiv": [{
     "question": "Apakah ada Perempuan Usia 10 - 50 Tahun (Usia Subur)",
     "answer": [{

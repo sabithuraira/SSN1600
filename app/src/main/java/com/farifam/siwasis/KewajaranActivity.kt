@@ -19,9 +19,9 @@ class KewajaranActivity : AppCompatActivity() {
         (this as AppCompatActivity).supportActionBar!!.title = "Pilih Blok"
 
         val listHeroes = listOf(
-            Blok(id="i", name = "BLOK I", deskripsi =  "Keterangan Tempat", pesan = ""),
-            Blok(id="ii", name = "BLOK II", deskripsi =  "Keterangan Pencacahan", pesan = ""),
-            Blok(id="iii", name = "BLOK III", deskripsi =  "Keterangan Ringkasan", pesan = ""),
+            Blok(id="i", name = "BLOK I", deskripsi =  "Keterangan Tempat", pesan = "Cek isian Blok I sesuai dengan keterangan DSRT"),
+            Blok(id="ii", name = "BLOK II", deskripsi =  "Keterangan Pencacahan", pesan = "Cek Isian Blok II telah terisi lengkap"),
+            Blok(id="iii", name = "BLOK III", deskripsi =  "Keterangan Ringkasan", pesan = "Cek Isian Blok III sesuai dengan isian blok IV"),
             Blok(id="iv", name = "BLOK IV", deskripsi =  "Keterangan Demografi", pesan = ""),
             Blok(id="v", name = "BLOK V", deskripsi =  "Keterangan Nomor Induk Kependudukan", pesan = ""),
             Blok(id="vi", name = "BLOK VI", deskripsi =  "Keterangan Migrasi, Akta Kelahiran, dan Pendidikan",
