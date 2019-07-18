@@ -1,0 +1,584 @@
+{
+  "bloki": [],
+  "blokii": [],
+  "blokiii": [],
+  "blokiv": [
+    {
+      "id": "4.1",
+      "question": "Apakah ada Wanita pernah kawin (WPK) umur 10-54 tahun (R.404>1, R405=2, dan R407 = 10-54)",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "R.1001 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+
+    {
+      "id": "4.2",
+      "question": "Apakah ada ART yang berusia 0 (nol) Tahun atau bayi ( < 12 bulan)",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            " [KOR Blok XIII] R. 1302 Kondisi ART 0 - 12 bulan Pertanyaan imunisasi harus ada isiannya",
+            " [KOR Blok XIII] R. 1308 s/d 1309  Kondisi ART 0 - 23 bulan, jenis Makanan Pendamping apakah sudah wajar dengan umur dan kondisi wilayah",
+            " [KP Blok IV.2.] R.239 - R.240 (Biaya Pelayanan Pengobatan) Minimal harus ada isian",
+          	" [KP Blok IV.2.] R.250 (Biaya Periksa Kehamilan) Jika kosong, apakah benar",
+	          " [KP Blok IV.2.] R.251 (Biaya Imunisasi) Biaya imunisasi terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "question": "Apakah ada yang status kawin/Cerai (R.404 > 1)",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek Umur harus lebih dari 10 tahun (R407 > 10 tahun)",
+            "Cek R.502 ≠ 2 pada jenjang ≤ SMA (R.503 < 15)"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokv": [
+    {
+      "id": "5.1",
+      "question": "Apakah ada R.502  = 2 masih bersekolah ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek umur (R.407) dengan kesesuaian jenjang (R. 503)",
+            "Blok KP IV.2. R.255 - 260 harus terisi",
+            "Jika R.503 < 15 maka R.404 > 1 (belum kawin/cerai)"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.2",
+      "question": "apakah ada R.503 = 2, 6, 10 (Sekolah Luar Biasa)?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke Petugas kejadian jarang (Rare Cases) apa benar ????"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.3",
+      "question": "Apakah ada R.502 = 2 dan R.503 = 1, 5, 9 (pendidikan kejar paket)?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke PCL kejadian jarang, cek lokasi sampel apa memungkinkan"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.4",
+      "question": "Apakah ada yang telah lulus (R504 = 8)",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek keseuaian umur minimal lulus (SD min 10 thn, SMP min 13 tahun, SMA min 16 Thn"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.5",
+      "question": "Apakah ada di R.507  kode X dilingkari",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "kode X dilingkari jika kode lainnya (A - D) tidak dilingkari",
+            "Konfirmasi ke petugas, Kode X untuk ART yang tidak melakukan apa-apa seperti sakit, atau pemalas akut"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.6",
+      "question": "R.507 pada ART no. 1, apakah ada kode D tidak dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Kegiatan pibadi tersebut meliputi kegiatan ARTdalam sosial kemasyarakatan, seperti rapat RT,  yasinan, melayat, kondangan dan lainnya"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.7",
+      "question": "Apakah ada ART bekerja / R.507 kode A dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian 510 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.8",
+      "question": "Apakah ada ART sementara tidak bekerja / R.509 kode 1 dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian 510 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "5.9",
+      "question": "Apakah R.510 terisi 1 - 5 ",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian KP Blok V.A Pendapatan upah/gaji atau V.B pendapatan usaha terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokvi": [
+    {
+      "id": "6.1",
+      "question": "Apakah ada R.601 = A dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian IV.2 R.301 ≥ Rp. 27.500 disesuaikan dengan golongan BPJS"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "6.2",
+      "question": "Apakah ada R.601 = B  D atau E  dilingkari ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian IV.2 R.301 > 10.000  biaya premi asuransi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    
+    {
+      "id": "6.3",
+      "question": "Apakah ada R.601 kode C tidak dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi dengan apa Jamkesda seluruh penduduk tidak berlaku lagi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "6.4",
+      "question": "Apakah ada R.601 = C dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek berlakunya jamkesda sesuai kabupaten/kota",
+            "[Blok KP] Cek isian IV.2 R.301 = Senilai BPJS gol. 3 Rp. 27.500/orang/bulan dan Blok V.D R.1.a penerimaan transfer pemerintah"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "6.5",
+      "question": "Apakah ada R.603 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian IV.2  R. 246 - 249  salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "6.6",
+      "question": "Apakah ada R.606 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian IV.2  R. 246 - 249  salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "6.7",
+      "question": "Apakah ada R.608 or 611 or 614 or 617 or 620 or = A, B, C, D, E dilingkari",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian R.601 keseuaian kepemilikan jaminan kepemilikan"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokvii": [
+    {
+      "id": "7.1",
+      "question": "Apakah ada R.701  = 1  ART rawat inap ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian IV.2. R.239 - 245 salah satunya > 10.000"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "7.2",
+      "question": "Apakah ada R.702  kode F. Lainnya dilingkari ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas, apakah jenis faskes rawat inap telah sesuai dengan kode R.702",
+            "Cek isian R.704 or R.707 or R.710 or R.713 or R.716  jumlah hari rawat inap apakah wajar"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "7.3",
+      "question": "Apakah ada R.703 or R.706 or R.709 or R.712 or R.715 = A, B, C, D, E dilingkari",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian R.601 kesesuaian kepemilikan jaminan kepemilikan"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokviii": [
+    {
+      "id": "8.1",
+      "question": "Apakah membeli kacamata, kaki/tangan palsu, atau kursi roda, R.801 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Isian R.802 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "8.2",
+      "question": "Apakah melakukan tes kesehatan, R.803 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Isian R.804 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "8.3",
+      "question": "Apakah melakukan pemeliharaan kesehatan, R.805 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Isian R.806 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "8.4",
+      "question": "Apakah menggunakan jasa ambulance, R.807 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Isian R.808 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokix": [
+    {
+      "id": "9.1",
+      "question": "Apakah ada WPK (wanita pernah kawin) usia 10-54 tahun, R.901 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Isian R.1001 harus terisi, jumlah kolom yang terisi sebanyak jumlah WPK 10-54 tahun"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "9.2",
+      "question": "Jika pernah ke posyandu, R.903 = 1",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian IV.2  R. 241  harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokx": [
+    {
+      "id": "10.1",
+      "question": "Apakah R. 1001 = 1 atau WPK penah melahirkan dalam 2 tahun terakhir?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek kewajaran umur ibu saat ini (R.407)"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "10.2",
+      "question": "Apakah ada isian R.1002  = 1 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Cek isian ART blok IV, apakah anak masih satu ruta, dan cek selisih usia anak dan ibu harus ≤ 2 Tahun"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxi": [],
+  "blokxii": [],
+  "blokxiii": [],
+  "blokxiv": [],
+  "blokxv": [],
+  "blokxvi": [],
+  "blokxvii": [],
+  "blokxviii": [],
+  "blokxix": [],
+  "blokxx": [],
+  "blokxxi": [],
+  "blokxxii": [],
+  "blokxxiii": []
+}

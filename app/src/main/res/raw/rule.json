@@ -1,6 +1,7 @@
 {
   "bloki": [
     {
+      "id": "1.1",
       "question": "Apakah klasifikasi adalah Perdesaan?",
       "answer": [
         {
@@ -22,6 +23,7 @@
   "blokii": [],
   "blokiii": [
     {
+      "id": "3.1",
       "question": "Apakah isian R.302 > 0 ?",
       "answer": [
         {
@@ -41,6 +43,7 @@
     },
 
     {
+      "id": "3.2",
       "question": "Apakah isian R.303 > 0 ?",
       "answer": [
         {
@@ -59,11 +62,13 @@
     }
   ],
   "blokiv": [{
+    "id": "4.1",
     "question": "Apakah ada Perempuan Usia 10 - 50 Tahun (Usia Subur)",
     "answer": [{
       "label": "Ya",
       "action": "next",
       "next_action": {
+        "id": "4.1.1",
         "question": "Apakah ada ART yang berusia 0 (nol) Tahun atau bayi",
         "answer": [{
           "label": "Ya",
@@ -93,6 +98,7 @@
     ]
   },
     {
+      "id": "4.2",
       "question": "Apakah ada anak kandung (R.403 = 3)",
       "answer": [{
         "label": "Ya",
@@ -108,6 +114,7 @@
     },
 
     {
+      "id": "4.3",
       "question": "Apakah ada yang status kawin/Cerai (R.404 > 1)",
       "answer": [{
         "label": "Ya",
@@ -127,11 +134,13 @@
   ],
 
   "blokv": [{
+    "id": "5.1",
     "question": "Apakah ada yang mempunyai NIK (R.502  terisi)?",
     "answer": [{
       "label": "Ya",
       "action": "next",
       "next_action": {
+        "id": "5.1.1",
         "question": "Apakah ada yang sumber NIK dari KTP (R.503 = 2)",
         "answer": [{
           "label": "Ya",
@@ -157,6 +166,7 @@
 
 
   "blokvi": [{
+    "id": "6.1",
     "question": "Apakah R.606 ada yang terisi 1 atau 2",
     "answer": [{
       "label": "Ya",
@@ -171,6 +181,7 @@
     ]
   },
     {
+      "id": "6.2",
       "question": "Berapa kode yang terisi pada R.607?",
       "answer": [{
         "label": "1",
@@ -195,6 +206,7 @@
       ]
     },
     {
+      "id": "6.3",
       "question": "Apakah ada R. 609  = 5 tetapi R.610 / 611 = 1",
       "answer": [{
         "label": "Ya",
@@ -209,6 +221,7 @@
       ]
     },
     {
+      "id": "6.4",
       "question": "Apakah ada R.612  = 2 masih bersekolah ?",
       "answer": [{
         "label": "Ya",
@@ -227,6 +240,7 @@
       ]
     },
     {
+      "id": "6.5",
       "question": "apakah ada R.613 = 2, 6, 10 (Sekolah Luar Biasa)?",
       "answer": [{
         "label": "Ya",
@@ -241,6 +255,7 @@
       ]
     },
     {
+      "id": "6.6",
       "question": "Apakah ada R.612 = 2 dan R.613 = 1, 5, 9 (pendidikan kejar paket)?",
       "answer": [{
         "label": "Ya",
@@ -255,6 +270,7 @@
       ]
     },
     {
+      "id": "6.7",
       "question": "Apakah ada yang telah lulus (R614 = 8)",
       "answer": [{
         "label": "Ya",
@@ -269,6 +285,7 @@
       ]
     },
     {
+      "id": "6.8",
       "question": "Apakah ada R.617 = 1",
       "answer": [{
         "label": "Ya",
@@ -286,6 +303,7 @@
       ]
     },
     {
+      "id": "6.9",
       "question": "Apakah R.618 - R.620 terisi?",
       "answer": [{
         "label": "Ya",
@@ -303,6 +321,7 @@
 
 
   "blokvii": [{
+    "id": "7.1",
     "question": "Apakah ada di R.701  kode X dilingkari",
     "answer": [{
       "label": "Ya",
@@ -320,6 +339,7 @@
     ]
   },
     {
+      "id": "7.2",
       "question": "pada ART no. 1, apakah ada kode D tidak dilingkari?",
       "answer": [{
         "label": "Ya",
@@ -336,6 +356,7 @@
       ]
     },
     {
+      "id": "7.3",
       "question": "Apakah ada ART bekerja / R.701 kode A dilingkari?",
       "answer": [{
         "label": "Ya",
@@ -353,6 +374,7 @@
       ]
     },
     {
+      "id": "7.4",
       "question": "Apakah R.705 terisi 1 - 5",
       "answer": [{
         "label": "Ya",
@@ -371,6 +393,7 @@
   ],
 
   "blokviii": [{
+    "id": "8.1",
     "question": "Apakah ada R. 802 = 1  / menguasai HP ?",
     "answer": [{
       "label": "Ya",
@@ -387,6 +410,7 @@
     ]
   },
     {
+      "id": "8.2",
       "question": "Apakah ada R.804 = 1 / menggunakan internet",
       "answer": [{
         "label": "Ya",
@@ -403,6 +427,7 @@
       ]
     },
     {
+      "id": "8.3",
       "question": "Apakah ada R.807 kode B dilingkari",
       "answer": [{
         "label": "Ya",
@@ -419,6 +444,7 @@
       ]
     },
     {
+      "id": "8.4",
       "question": "Apakah ada  R.808 = 1",
       "answer": [{
         "label": "Ya",
@@ -440,6 +466,7 @@
   "blokix": [],
 
   "blokx": [{
+    "id": "10.1",
     "question": "apakah ada ART dengan isian R. 1002 s.d. 1008 kode 1, 2, 5 atau 6 semua ?",
     "answer": [{
       "label": "Ya",
@@ -458,6 +485,7 @@
 
   "blokxi": [
     {
+      "id": "11.1",
       "question": "Apakah ada R.1101 = A dilingkari?",
       "answer": [
         {
@@ -475,6 +503,7 @@
       ]
     },
     {
+      "id": "11.2",
       "question": "Apakah ada R.1101 = B  D atau E  dilingkari ?",
       "answer": [
         {
@@ -492,6 +521,7 @@
       ]
     },
     {
+      "id": "11.3",
       "question": "Apakah ada R.1101 kode C tidak dilingkari?",
       "answer": [
         {
@@ -509,6 +539,7 @@
       ]
     },
     {
+      "id": "11.4",
       "question": "Apakah ada R.1101 = C dilingkari?",
       "answer": [
         {
@@ -527,6 +558,7 @@
       ]
     },
     {
+      "id": "11.5",
       "question": "Apakah ada R.1104 = 1",
       "answer": [
         {
@@ -544,6 +576,7 @@
       ]
     },
     {
+      "id": "11.6",
       "question": "Apakah ada R.1105 = 1",
       "answer": [
         {
@@ -561,6 +594,7 @@
       ]
     },
     {
+      "id": "11.7",
       "question": "Apakah ada R.1108 = A, B, C, D, E dilingkari",
       "answer": [
         {
@@ -580,6 +614,7 @@
   ],
   "blokxii": [
     {
+      "id": "12.1",
       "question": "Apakah ada R.1201  = 1  ART rawat inap ?",
       "answer": [
         {
@@ -597,6 +632,7 @@
       ]
     },
     {
+      "id": "12.2",
       "question": "Apakah ada R.1202  kode G. Lainnya dilingkari ?",
       "answer": [
         {
@@ -615,6 +651,7 @@
       ]
     },
     {
+      "id": "12.3",
       "question": "Apakah ada R.1204 = A, B, C, D, E dilingkari",
       "answer": [
         {
@@ -632,6 +669,7 @@
       ]
     },
     {
+      "id": "12.4",
       "question": "Apakah ada isian R.1205 = 1 atau 2 ?",
       "answer": [
         {
@@ -650,6 +688,7 @@
       ]
     },
     {
+      "id": "12.5",
       "question": "Apakah ada isian R.1206 = 1 atau 2 ?",
       "answer": [
         {
@@ -671,6 +710,7 @@
   ],
   "blokxiii": [
     {
+      "id": "13.1",
       "question": "Apakah ada Rincian 1303 kode K. lainnya dilingkari?",
       "answer": [
         {
@@ -688,6 +728,7 @@
       ]
     },
     {
+      "id": "13.2",
       "question": "Apakah ada Rincian 1305 kode G. lainnya dilingkari?",
       "answer": [
         {
@@ -705,6 +746,7 @@
       ]
     },
     {
+      "id": "13.3",
       "question": "Apakah ada Rincian 1307 kode J. lainnya dilingkari?",
       "answer": [
         {
@@ -722,6 +764,7 @@
       ]
     },
     {
+      "id": "13.4",
       "question": "Apakah ada Rincian 1309 kode H. lainnya dilingkari?",
       "answer": [
         {
@@ -741,6 +784,7 @@
   ],
   "blokxiv": [
     {
+      "id": "14.1",
       "question": "Apakah R.1404 telah terisi tanggal dan Bulan?",
       "answer": [
         {
@@ -762,6 +806,7 @@
   ],
   "blokxv": [
     {
+      "id": "15.1",
       "question": "Apakah R. 1502.A. = 1 atau WPK penah melahirkan?",
       "answer": [
         {
@@ -779,6 +824,7 @@
       ]
     },
     {
+      "id": "15.2",
       "question": "Apakah ada isian R.1503  = 1 ?",
       "answer": [
         {
@@ -798,6 +844,7 @@
   ],
   "blokxvi": [
     {
+      "id": "16.1",
       "question": "apakah ada isian R.1602 terisi 4, 6, 7 dilingkari?",
       "answer": [
         {
@@ -814,6 +861,7 @@
       ]
     },
     {
+      "id": "16.2",
       "question": "apakah ada isian R.1602 terisi 8 dilingkari?",
       "answer": [
         {
@@ -834,6 +882,7 @@
   ],
   "blokxvii": [
     {
+      "id": "17.1",
       "question": "Apakah ada isian R.1703 = 5 ?",
       "answer": [
         {
@@ -854,6 +903,7 @@
   ],
   "blokxviii": [
     {
+      "id": "18.1",
       "question": "Apakah isian R.1806 - 1808 Atap, lantai, dinding (aladin) terisi ada bambu ?",
       "answer": [
         {
@@ -871,6 +921,7 @@
       ]
     },
     {
+      "id": "18.2",
       "question": "Apakah R.1809.C kode 2 (IPAL) dilingkari?",
       "answer": [
         {
@@ -891,6 +942,7 @@
   "blokxix": [],
   "blokxx": [
     {
+      "id": "20.1",
       "question": "Apakah ada R.2001.D kode 1 dilingkari?",
       "answer": [
         {
@@ -908,6 +960,7 @@
       ]
     },
     {
+      "id": "20.2",
       "question": "Apakah ada R.2001.H dan I kode 1 dilingkari?",
       "answer": [
         {
@@ -927,6 +980,7 @@
   ],
   "blokxxi": [
     {
+      "id": "21.1",
       "question": "Apakah R.2108 terisi atau ada yang mendapatkan PIP?",
       "answer": [
         {

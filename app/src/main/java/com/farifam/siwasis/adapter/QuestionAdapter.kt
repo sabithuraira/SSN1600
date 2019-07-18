@@ -10,9 +10,6 @@ import com.farifam.siwasis.holder.QuestionHolder
 import com.farifam.siwasis.model.Question
 import android.content.Context
 
-
-
-
 class QuestionAdapter(private var datas: MutableList<Question>,var mContext: Context) : RecyclerView.Adapter<QuestionHolder>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): QuestionHolder {
@@ -47,6 +44,8 @@ class QuestionAdapter(private var datas: MutableList<Question>,var mContext: Con
 
                     datas.set(position, newVal)
                     notifyItemChanged(position)
+
+//                    notifyDataSetChanged()
                 }
             }
         }

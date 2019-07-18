@@ -23,11 +23,10 @@ class BlokActivity : AppCompatActivity() {
         (this as AppCompatActivity).supportActionBar!!.title = intent.getStringExtra("nama")
         (this as AppCompatActivity).supportActionBar!!.subtitle = intent.getStringExtra("deskripsi")
 
-
         val listDatas: MutableList<Question> = mutableListOf()
 
         val parser = JsonParser()
-        val jsonData =  inputStreamToString(this.getResources().openRawResource(R.raw.rule))
+        val jsonData =  inputStreamToString(this.getResources().openRawResource(R.raw.rule_sm2))
 
         val gson = Gson()
 
