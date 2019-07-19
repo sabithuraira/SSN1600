@@ -568,15 +568,581 @@
       ]
     }
   ],
-  "blokxi": [],
+  "blokxi": [
+    {
+      "id": "11.1",
+      "question": "Apakah ada Rincian 1101.A = 6 atau R.1101B =6?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah sudah benar kode yang dilingkari. Di sumsel jarang penolong melahirkan oleh dukun beranak/peraji"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "11.2",
+      "question": "Apakah ada Rincian 1101.A kodenya lebih besar dari R.1102.B=6?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah sudah benar kode yang dilingkari. Seharusnya penolong melahirkan terakhir lebih baik dibanding dengan penolong melahirkan pertama"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
   "blokxii": [],
-  "blokxiii": [],
-  "blokxiv": [],
-  "blokxv": [],
-  "blokxvi": [],
-  "blokxvii": [],
-  "blokxviii": [],
-  "blokxix": [],
+  "blokxiii": [
+    {
+      "id": "13.1",
+      "question": "Apakah ada R.1301=12 bulan dan R.1302. = 1?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.2 R.239-254 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.2",
+      "question": "Apakah ada R.1309 A. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.1 - 15 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.3",
+      "question": "Apakah ada R.1309 B. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.98 - 105 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.4",
+      "question": "Apakah ada R.1309 C. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.67 - 71 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.5",
+      "question": "Apakah ada R.1309 D. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.16 - 61 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.6",
+      "question": "Apakah ada R.1309 E. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.63 - 66 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.7",
+      "question": "Apakah ada R.1309 F. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.86,R.81,R.108, R.116, R.119 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.8",
+      "question": "Apakah ada R.1309 G. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.73, R.74 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.9",
+      "question": "Apakah ada R.1309 H. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.109 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "13.10",
+      "question": "Apakah ada R.1309 I. = 1 ?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV.1 R.149 salah satunya harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxiv": [
+    {
+      "id": "14.1",
+      "question": "Apakah isian R.1402 = 1 s.d 4?",
+        "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP Blok IV. R.189 - 194 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "14.2",
+      "question": "Apakah isian R.1403.B ≠ 2 dan R.1403.C terisi?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar. R.1403.C hanya bisa terisi jika R.1403.B = 2"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxv": [
+    {
+      "id": "15.1",
+      "question": "Apakah isian R.1504 - 1506 Atap, lantai, dinding (aladin) terisi ada bambu ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar?? Di Sumsel jarang sekali rumah dengan 'aladin' dari bambu"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "15.2",
+      "question": "Apakah isian R.1507.C =2 (IPAL) dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfrimasi dengan petugas apakah Benar. IPAL adalah pemrosesan limbah jadi air bersih"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "15.3",
+      "question": "Apakah isian Rincian 1507.B ≠ 1 dam Rincian 1507.C =1?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke Petugas kejadian jarang (Rare Cases) apa benar ????"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "15.4",
+      "question": "Apakah isian R.1508 kode lebih besar dari R.1514?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar.Biasanya kualitas untuk sumber air untuk minum lebih baik daripada sumber air untuk mandi/cuci/dll"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxvi": [
+    {
+      "id": "16.1",
+      "question": "Apakah isian Blok I Rincian 105=1 danBlok XVI R.1601 = 5 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar. Di perdesaan jarang ada gas kota"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "16.2",
+      "question": "Apakah isian Blok I Rincian 105=2 danBlok XVI R.1601 = 8 atau 10 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar. Di perkotaan sudah jarang menggunakan minyak tanah ataupun kayu bakar"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "16.3",
+      "question": "Apakah isian R. 1602=1 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar. Sudah jarang menggunakan kayu bakar"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "16.4",
+      "question": "Apakah isian R. 1604=1 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi ke petugas apakah benar. Sudah jarang cara perolehan kayu bakar dengan membeli"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxvii": [
+    {
+      "id": "17.1",
+      "question": "Apakah R.1702.F = 1 dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfirmasi dengan petugas apakah Benar. Landasan Pesawat terbang hanya ada di daerah Palembang, Lubuk Linggau dan Pagar Alam"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "17.2",
+      "question": "Apakah R.1703.F=1 dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfrimasi dengan petugas apakah Benar. Di Sumsel hanya beberapa tempat yang memiliki gunung yang masih aktif"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "17.3",
+      "question": "Apakah R.1706 kode 2 (IPAL) dilingkari?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "Konfrimasi dengan petugas apakah Benar. IPAL adalah pemrosesan limbah jadi air bersih"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxviii": [
+    {
+      "id": "18.1",
+      "question": "Apakah kolom i Rincian 1801.A s.d L  terisi 1?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian KP Blok V.D R.1.a s.d V.D .2 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
+  "blokxix": [
+    {
+      "id": "19.1",
+      "question": "Apakah isian R1903.B terisi?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian KP"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "19.2",
+      "question": "Apakah isian R.1906.A =1 dan terisi?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP. Blok D. R.1.a minimal rincian sama dengan R.1906.A"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "19.3",
+      "question": "Apakah isian R.1908.A =1 ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP. Blok  D Rincian 1.a harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "19.4",
+      "question": "Apakah isian R.1908.B s.d D =1?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek Isian KP.Blok E R.302 harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    },
+    {
+      "id": "19.5",
+      "question": "Apakah isian R.1912 =1  ?",
+      "answer": [
+        {
+          "label": "Ya",
+          "action": "skip",
+          "message": [
+            "[Blok KP] Cek isian IV.2 R.255 s.d R. 260  dan Blok V.D R.1.a penerimaan transfer pemerintah harus terisi"
+          ]
+        },
+        {
+          "label": "Tidak",
+          "action": "skip",
+          "message": []
+        }
+      ]
+    }
+  ],
   "blokxx": [],
   "blokxxi": [],
   "blokxxii": [],
